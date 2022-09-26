@@ -32,7 +32,8 @@
     "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/typography": "^0.5.2",
     "tailwind-scrollbar": "github:adoxography/tailwind-scrollbar#pull/36/head",
-    "@segment/analytics-next": "^1.41.1"
+    "@segment/analytics-next": "^1.41.1",
+    "@supabase/supabase-js": "^1.35.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
