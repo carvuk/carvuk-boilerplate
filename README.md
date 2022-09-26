@@ -42,7 +42,7 @@ Built-in feature from Next.js:
 Run the following command on your local environment:
 
 ```shell
-git clone --depth=1 https://github.com/ixartz/Next-js-Boilerplate.git my-project-name
+git clone --depth=1 https://github.com/carvuk/Carvuk-Boilerplate.git my-project-name
 cd my-project-name
 npm install
 ```
@@ -126,40 +126,40 @@ feat(blog): add comment section
 ```
 
 **Componentes**
+
 We use https://tailwindui.com/ components, please contact nico@carvuk.com for credentials.
 
 **CLEAN**
 
 *Names*
 
--Use camelCase
--Choose descriptive and unambiguous names.
--Make meaningful distinction.
--Use pronounceable names.
--Use searchable names.
--Replace magic numbers with named constants.
--Avoid encodings. Don't append prefixes or type information.
+- Use camelCase
+- Choose descriptive and unambiguous names.
+- Make meaningful distinction.
+- Use pronounceable names.
+- Use searchable names.
+- Replace magic numbers with named constants.
+- Avoid encodings. Don't append prefixes or type information.
 
 *Functions*
 
--Small.
--Do one thing.
--Use descriptive names.
--Prefer fewer arguments.
--Have no side effects.
--Don't use flag arguments. Split method into several independent methods that -can be called from the client without the flag.
+- Small.
+- Do one thing.
+- Use descriptive names.
+- Prefer fewer arguments.
+- Have no side effects.
+- Don't use flag arguments. Split method into several independent methods that can be called from the client without the flag.
 
 *Comments*
 
--Always try to explain yourself in code.
--Don't be redundant.
--Don't add obvious noise.
--Don't use closing brace comments.
--Don't comment out code. Just remove.
--Use as explanation of intent.
--Use as clarification of code.
--Use as warning of consequences.
+- Always try to explain yourself in code.
+- Don't be redundant.
+- Don't add obvious noise.
+- Don't use closing brace comments.
+- Don't comment out code. Just remove.
+- Use as explanation of intent.
+- Use as clarification of code.
+- Use as warning of consequences.
 
 For more good practices:
 https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29
-
