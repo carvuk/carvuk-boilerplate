@@ -1,0 +1,34 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    env:
+      NEXT_PUBLIC_SUPABASE_URL: https://doluyopawzjftlsmghuw.supabase.co
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRvbHV5b3Bhd3pqZnRsc21naHV3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTkwMTc2MjMsImV4cCI6MTk3NDU5MzYyM30.LPw_rL68bfs3qTsa8eixsvVtCrVPkHzgD45pVxaOXwg
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+      - uses: pre-commit/action@v3.0.0
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "yarn"
+      - run: pre-commit run --all-files
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      - run: yarn test
