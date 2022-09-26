@@ -128,3 +128,35 @@ feat(blog): add comment section
 **Componentes**
 We use https://tailwindui.com/ components, please contact nico@carvuk.com for credentials.
 
+**CLEAN**
+
+*Names*
+
+-Use camelCase
+-Choose descriptive and unambiguous names.
+-Make meaningful distinction.
+-Use pronounceable names.
+-Use searchable names.
+-Replace magic numbers with named constants.
+-Avoid encodings. Don't append prefixes or type information.
+
+*Functions*
+
+-Small.
+-Do one thing.
+-Use descriptive names.
+-Prefer fewer arguments.
+-Have no side effects.
+-Don't use flag arguments. Split method into several independent methods that -can be called from the client without the flag.
+
+*Comments*
+
+-Always try to explain yourself in code.
+-Don't be redundant.
+-Don't add obvious noise.
+-Don't use closing brace comments.
+-Don't comment out code. Just remove.
+-Use as explanation of intent.
+-Use as clarification of code.
+-Use as warning of consequences.
+
