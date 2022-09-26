@@ -103,23 +103,28 @@ Deploy this Next JS Boilerplate on Vercel in one click:
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fixartz%2FNext-js-Boilerplate)
 
-### VSCode information (optional)
+### .env
 
-If you are VSCode users, you can have a better integration with VSCode by installing the suggested extension in `.vscode/extension.json`. The starter code comes up with Settings for a seamless integration with VSCode. The Debug configuration is also provided for frontend and backend debugging experience.
-
-With the plugins installed on your VSCode, ESLint and Prettier can automatically fix the code and show you the errors. Same goes for testing, you can install VSCode Jest extension to automatically run your tests and it also show the code coverage in context.
-
-Pro tips: if you need a project wide type checking with TypeScript, you can run a build with <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> on Mac.
-
+You will need the following environment variables:
+```shell
+NEXT_PUBLIC_SUPABASE_URL=https://doluyopawzjftlsmghuw.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRvbHV5b3Bhd3pqZnRsc21naHV3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTkwMTc2MjMsImV4cCI6MTk3NDU5MzYyM30.LPw_rL68bfs3qTsa8eixsvVtCrVPkHzgD45pVxaOXwg
+NEXT_PUBLIC_KEY_SEGMENT=HBREo9GH9jf2MUF30g8Xvr9Mn9kTlczy
+```
 ### Reglas
 
-Commit messages examples:
+**Commit messages**
 ```shell
 type(scope?): subject  #scope is optional; multiple scopes are supported (current delimiter options: "/", "\" and ",")
 ```
+Examples:
 ```shell
 fix(server): send cors headers
 ```
 ```shell
 feat(blog): add comment section
 ```
+
+**Componentes**
+We use https://tailwindui.com/ components, please contact nico@carvuk.com for credentials.
+
