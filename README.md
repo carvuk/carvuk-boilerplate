@@ -160,3 +160,6 @@ We use https://tailwindui.com/ components, please contact nico@carvuk.com for cr
 -Use as clarification of code.
 -Use as warning of consequences.
 
+For more good practices:
+https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29
+
