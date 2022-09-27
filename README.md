@@ -44,7 +44,7 @@ Run the following command on your local environment:
 ```shell
 git clone --depth=1 https://github.com/carvuk/Carvuk-Boilerplate.git my-project-name
 cd my-project-name
-npm install
+yarn install
 ```
 
 Then, you can run locally in development mode with live reload:
