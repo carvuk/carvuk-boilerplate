@@ -25,8 +25,8 @@ const customJestConfig = {
     global: {
       branches: 80,
       functions: 80,
-      lines: 80,
-      statements: 80,
+      lines: 75,
+      statements: 75,
     },
   },
   testEnvironment: 'jest-environment-jsdom',

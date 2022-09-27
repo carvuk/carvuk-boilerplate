@@ -21,14 +21,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v3
-      - uses: pre-commit/action@v3.0.0
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
-      - run: pre-commit run --all-files
       - run: yarn install --frozen-lockfile
+      - run: yarn lint
       - run: yarn build
       - run: yarn test
