@@ -46,6 +46,7 @@ Use this:
 Then, you can run locally in development mode with live reload:
 
 ```shell
+yarn install
 yarn run dev
 ```
 
