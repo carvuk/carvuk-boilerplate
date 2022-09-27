@@ -39,13 +39,9 @@ Built-in feature from Next.js:
 
 ### Getting started
 
-Run the following command on your local environment:
+Use this:
 
-```shell
-git clone --depth=1 https://github.com/carvuk/Carvuk-Boilerplate.git my-project-name
-cd my-project-name
-yarn install
-```
+![alt text](./public/assets/template.png "Title")
 
 Then, you can run locally in development mode with live reload:
 
